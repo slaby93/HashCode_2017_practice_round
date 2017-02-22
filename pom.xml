@@ -50,7 +50,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>test.Main</mainClass>
+                            <mainClass>com.github.andone.launcher.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

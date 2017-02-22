@@ -1,4 +1,4 @@
-package test;
+package com.github.andone.launcher;
 
 /**
  * Created by denis on 2/22/17.
