@@ -25,7 +25,8 @@ public class Pattern {
         );
     }
 
-    public static List<List<Cell>> getValidRegions() {
+    public static List<List<Cell>> getValidRegions(int x, int y) {
+
         return Collections.emptyList();
     }
 
