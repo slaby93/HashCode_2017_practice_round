@@ -28,4 +28,5 @@ public class Pizza {
     public void set(int i, int j, Cell c) {
         pizza.get(i).set(j, c);
     }
+
 }
