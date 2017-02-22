@@ -40,11 +40,12 @@ public class Main {
                 }
             }
         }
-        List<Pattern> patternList = Pattern.getPatterns();
 
         System.out.println(p);
 //        System.out.println();
 //        System.out.println(input);
+        p.compute();
+        System.out.println(p);
     }
 
 

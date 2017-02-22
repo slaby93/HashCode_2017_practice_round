@@ -14,6 +14,6 @@ public class Cell {
 
     @Override
     public String toString() {
-        return i.toString() + "(" + x + "," + y + ")";
+        return i.toString() + "(" + x + "," + y + "," + regionId + ")";
     }
 }
