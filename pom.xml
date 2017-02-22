@@ -50,7 +50,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.imc.assignment.driver.ConsoleGameDriver</mainClass>
+                            <mainClass>test.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
