@@ -4,6 +4,7 @@ public class Cell {
     Ingridients i;
     int x;
     int y;
+    int regionId = -1;
 
     Cell(int x, int y, Ingridients k) {
         this.x = x;
