@@ -45,7 +45,7 @@ public class Pattern {
     }
 
     private static boolean isValidRegion(int x, int y, Pizza pizza) {
-        return x < pizza.getRows() && y < pizza.getCols() && x >= 0 && y >= 0;
+        return x < pizza.height && y < pizza.width && x >= 0 && y >= 0;
     }
 
     private static List<Cell> cellsInRegion(int x0, int y0, int dx, int dy, Pizza pizza) {
