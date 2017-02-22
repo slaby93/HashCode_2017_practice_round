@@ -11,9 +11,16 @@
     <properties>
         <junit.version>4.12</junit.version>
         <junit.params.version>1.0.6</junit.params.version>
+        <commons-io.version>2.5</commons-io.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
