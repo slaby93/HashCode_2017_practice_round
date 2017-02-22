@@ -7,6 +7,7 @@ import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -33,18 +34,18 @@ public class Main {
 
             for (int j = 0; j < height; j++) {
                 if (in.charAt(j) == 'T') {
-                    p.set(i, j, new Cell(Ingridients.TOMATO));
+                    p.set(i, j, new Cell(i,j,Ingridients.TOMATO));
                 } else {
-                    p.set(i, j, new Cell(Ingridients.MUSHROM));
+                    p.set(i, j, new Cell(i,j,Ingridients.MUSHROM));
                 }
             }
         }
+        List<Pattern> patternList = Pattern.getPatterns();
+
         System.out.println(p);
 //        System.out.println();
 //        System.out.println(input);
     }
 
-
-    
 
 }

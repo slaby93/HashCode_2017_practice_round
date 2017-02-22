@@ -12,7 +12,7 @@ public class Pizza {
         for (int i = 0; i < x; i++) {
             pizza.add(new ArrayList<>());
             for (int j = 0; j < y; j++) {
-                pizza.get(i).add(new Cell(Ingridients.EMPTY));
+                pizza.get(i).add(new Cell(i,j,Ingridients.EMPTY));
             }
         }
     }
@@ -27,6 +27,10 @@ public class Pizza {
 
     public void set(int i, int j, Cell c) {
         pizza.get(i).set(j, c);
+    }
+
+    public Cell get(int i, int j) {
+        return pizza.get(i).get(j);
     }
 
 }
