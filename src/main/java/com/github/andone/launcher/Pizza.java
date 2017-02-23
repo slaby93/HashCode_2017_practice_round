@@ -19,6 +19,7 @@ public class Pizza {
             pizza.add(new ArrayList<>());
             for (int j = 0; j < y; j++) {
                 pizza.get(i).add(new Cell(i, j, Ingridients.EMPTY));
+
             }
         }
     }
@@ -39,10 +40,14 @@ public class Pizza {
         return pizza.get(i).get(j);
     }
 
+    public int getWidth(){return width;}
+
+    public int getHeight(){return height;}
+
     public void compute() {
         Cell c = this.getNextEmptyCell();
 //        // list of regions
-        List<List<Cell>> region = Pattern.getValidRegions(c.x, c.y);
+        List<List<Cell>> region = Pattern.getValidRegions(c.x, c.y, this);
         List<Cell> notImpactingRegion = getBiggestNotImpactingRegion(region);
         int reg = this.nextRegion();
         for (int i = 0; i < notImpactingRegion.size(); i++) {
@@ -74,6 +79,21 @@ public class Pizza {
 
     public int nextRegion() {
         return nextRegion++;
+    }
+
+
+
+    public List<List<Integer>> patternCount(){
+        List<List<Integer>> result = new ArrayList<>();
+        for (int i = 0; i < this.getWidth(); i++) {
+            result.add(new ArrayList<>());
+            for (int j = 0; j < this.getHeight(); j++) {
+                result.get(i).add(0);
+
+            }
+        }
+
+        return result;
     }
 
 }
