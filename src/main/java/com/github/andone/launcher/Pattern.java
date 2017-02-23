@@ -63,6 +63,10 @@ public class Pattern {
         this.y = y;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getX() {
         return x;
     }
